@@ -138,9 +138,9 @@ function fetchProducts() {
                                 <span class="text-primary me-1">${product.currency}${product.price}</span>
                                 ${product.discountedPrice != 0 ? '<span class="text-body text-decoration-line-through">${product.discountedPrice}</span>' : ''}
                             </div>
-                            <div class="d-flex border-top">
+                            <div class="d-flex border-top"  onclick="addToCard('${product.sku}')" style="cursor:pointer">
                                 <small class="w-100 text-center py-2">
-                                    <a style="cursor: pointer;" class="text-body" onclick="addToCard('${product.sku}')"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    <a style="cursor: pointer;" class="text-body"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                 </small>
                             </div>
                         </div>
