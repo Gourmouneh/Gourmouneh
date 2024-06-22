@@ -1,0 +1,84 @@
+ [{
+     "sku": "G-001",
+     "name": "Ghassan Ismail’s Pine Nuts",
+     "description": "1Kg",
+     "price": 2.5,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "image": "PineNuts.png",
+     "active": true,
+     "new": true
+ },
+  {
+     "sku": "G-002",
+     "name": "Organic Sumac",
+     "description": "",
+     "price": 2.5,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "image": "OrganicSumac.png",
+     "active": true,
+     "new": true
+ },
+  {
+     "sku": "G-003",
+     "name": "Zaatar Mix",
+     "description": "",
+     "price": 2.5,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "image": "ZaatarMix.png",
+     "active": true,
+     "new": true
+ },
+  {
+     "sku": "G-004",
+     "name": "Organic Walnut",
+     "description": "",
+     "price": 2.5,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "image": "OrganicWalnut.png",
+     "active": true,
+     "new": true
+ },
+  {
+     "sku": "G-005",
+     "name": "Organic Keshek",
+     "description": "",
+     "price": 2.5,
+     "currency": "$",
+     "discountedPrice": 0,
+     "image": "OrganicKeshek.png",
+     "active": true,
+     "new": true
+ },
+  {
+     "sku": "G-006",
+     "name": "Organic Honey",
+     "description": "",
+     "price": 2.5,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "image": "OrganicHoney.png",
+     "active": true,
+     "new": true
+ },
+  {
+     "sku": "G-007",
+     "name": "Grape Leaves",
+     "description": "",
+     "price": 2.5,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "image": "GrapeLeaves.png",
+     "active": true,
+     "new": true
+ }
+]
