@@ -1,8 +1,8 @@
  [{
      "sku": "G-001",
      "name": "Ghassan Ismail’s Pine Nuts",
-     "description": "1Kg",
-     "price": 2.5,
+     "description": "",
+     "price": 50,
      "currency": "$",
 
      "discountedPrice": 0,
