@@ -108,7 +108,7 @@
      "currency": "$",
      "discountedPrice": 0,
      "logo": "OrganicDebesRemen.png",
-     "image": "OrganicDebesRemen.png",
+     "image": "",
      "active": true,
      "new": true
  },
@@ -124,5 +124,5 @@
      "image": "OrganicHoney.png",
      "active": true,
      "new": true
- },
+ }
 ]
