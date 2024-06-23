@@ -6,8 +6,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "",
-     "logo": "PineNuts.png",
+     "image": "PineNuts.png",
+     "logo": "PineNuts.jpeg",
      "active": true,
      "new": true
  },
@@ -19,7 +19,7 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "",
+     "image": "OrganicSumac.jpeg",
      "logo": "OrganicSumac.png",
      "active": true,
      "new": true
@@ -32,7 +32,7 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "ZaatarMix.png",
+     "image": "ZaatarMix.jpeg",
      "logo": "ZaatarMix.png",
      "active": true,
      "new": true
@@ -46,7 +46,7 @@
 
      "discountedPrice": 0,
      "image": "",
-     "logo": "OrganicWalnut.png",
+     "logo": "OrganicWalnut.jpeg",
      "active": false,
      "new": true
  },
@@ -58,7 +58,7 @@
      "currency": "$",
      "discountedPrice": 0,
      "logo": "OrganicKeshek.png",
-     "image": "OrganicKeshek1.png",
+     "image": "OrganicKeshek1.jpeg",
      "active": true,
      "new": true
  },
@@ -71,7 +71,7 @@
 
      "discountedPrice": 0,
      "logo": "OrganicHoney.png",
-     "image": "OrganicHoney2.png",
+     "image": "OrganicHoney2.jpeg",
      "active": true,
      "new": true
  },
@@ -84,7 +84,7 @@
 
      "discountedPrice": 0,
      "image": "",
-     "logo": "GrapeLeaves.png",
+     "logo": "GrapeLeaves.jpeg",
      "active": false,
      "new": true
  }, 
@@ -96,7 +96,7 @@
      "currency": "$",
      "discountedPrice": 0,
      "logo": "OrganicKeshek.png",
-     "image": "OrganicKeshek1.png",
+     "image": "OrganicKeshek1.jpeg",
      "active": true,
      "new": true
  },
@@ -107,7 +107,7 @@
      "price": 10,
      "currency": "$",
      "discountedPrice": 0,
-     "logo": "OrganicDebesRemen.png",
+     "logo": "OrganicDebesRemen.jpeg",
      "image": "",
      "active": true,
      "new": true
@@ -121,7 +121,7 @@
 
      "discountedPrice": 0,
      "logo": "OrganicHoney.png",
-     "image": "OrganicHoney1.png",
+     "image": "OrganicHoneyS.jpeg",
      "active": true,
      "new": true
  },
