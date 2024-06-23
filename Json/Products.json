@@ -65,8 +65,8 @@
   {
      "sku": "G-006",
      "name": "Organic Honey",
-     "description": "Pure sendyen meretben 900g",
-     "price": 15,
+     "description": "Pure sendyen kham 900g",
+     "price": 20,
      "currency": "$",
 
      "discountedPrice": 0,
@@ -115,8 +115,9 @@
 {
      "sku": "G-0010",
      "name": "Organic Honey",
-     "description": "Pure sendyen kham 900g",
-     "price": 20,
+
+     "description": "Pure sendyen meretben 900g",
+     "price": 15,
      "currency": "$",
 
      "discountedPrice": 0,
