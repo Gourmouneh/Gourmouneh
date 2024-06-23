@@ -125,12 +125,17 @@ function fetchProducts() {
             const productList = $('#product-list');
             activeProducts = products.filter(product => product.active);
             activeProducts.forEach((product, index) => {
-                var img = product.image == "" ? "ProductsLogo/"+product.logo : "Products/"+product.image ;
+                var imgUrl ="https://gourmouneh.github.io/Images/"
+                var img = product.image == "" ? imgUrl+"ProductsLogo/"+product.logo : imgUrl+"Products/"+product.image ;
+                var isLocal = false;
+                if(isLocal){
+                    img= "../imgs/" + product.logo
+                }
                 const productItem = $(`
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.${index + 1}s">
                         <div class="product-item">
                             <div class="position-relative bg-light overflow-hidden">
-                                <img class="img-fluid w-100" src="https://gourmouneh.github.io/Images/${img}" alt="">
+                                <img class="img-fluid w-100" src="${img}" alt="">
                                 ${product.new ? '<div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>' : ''}
                             </div>
                             <div class="text-center p-4">
