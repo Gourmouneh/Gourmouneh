@@ -50,7 +50,7 @@
      "active": true,
      "new": true
  },
-  {
+   {
      "sku": "G-005",
      "name": "Organic Keshek",
      "description": "Cow-1KG",
@@ -85,6 +85,18 @@
      "discountedPrice": 0,
      "image": "",
      "logo": "GrapeLeaves.png",
+     "active": true,
+     "new": true
+ }, 
+{
+     "sku": "G-006",
+     "name": "Organic Keshek",
+     "description": "Goat-1KG",
+     "price": 15,
+     "currency": "$",
+     "discountedPrice": 0,
+     "logo": "OrganicKeshek.png",
+     "image": "OrganicKeshek.png",
      "active": true,
      "new": true
  }
