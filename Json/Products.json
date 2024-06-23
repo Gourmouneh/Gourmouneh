@@ -124,5 +124,18 @@
      "image": "OrganicHoney.png",
      "active": true,
      "new": true
+ },
+{
+     "sku": "G-011",
+     "name": "Organic Freekeh",
+     "description": "1KG",
+     "price": 6,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "logo": "OrganicFreekeh.png",
+     "image": "",
+     "active": true,
+     "new": true
  }
 ]
