@@ -15,7 +15,7 @@
      "sku": "G-002",
      "name": "Organic Sumac",
      "description": "",
-     "price": 2.5,
+     "price": 12,
      "currency": "$",
 
      "discountedPrice": 0,
@@ -89,7 +89,7 @@
      "new": true
  }, 
 {
-     "sku": "G-006",
+     "sku": "G-008",
      "name": "Organic Keshek",
      "description": "Goat-1KG",
      "price": 15,
@@ -97,6 +97,18 @@
      "discountedPrice": 0,
      "logo": "OrganicKeshek.png",
      "image": "OrganicKeshek.png",
+     "active": true,
+     "new": true
+ },
+{
+     "sku": "G-009",
+     "name": "Organic Debes Remen",
+     "description": "500mL",
+     "price": 10,
+     "currency": "$",
+     "discountedPrice": 0,
+     "logo": "OrganicDebesRemen.png",
+     "image": "OrganicDebesRemen.png",
      "active": true,
      "new": true
  }
