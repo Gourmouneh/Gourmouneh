@@ -66,7 +66,7 @@
      "sku": "G-006",
      "name": "Organic Honey",
      "description": "",
-     "price": 2.5,
+     "price": 15,
      "currency": "$",
 
      "discountedPrice": 0,
@@ -111,5 +111,18 @@
      "image": "OrganicDebesRemen.png",
      "active": true,
      "new": true
- }
+ },
+{
+     "sku": "G-0010",
+     "name": "Organic Honey",
+     "description": "",
+     "price": 20,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "logo": "OrganicHoney.png",
+     "image": "OrganicHoney.png",
+     "active": true,
+     "new": true
+ },
 ]
