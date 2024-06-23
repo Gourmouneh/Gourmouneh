@@ -27,8 +27,8 @@
   {
      "sku": "G-003",
      "name": "Zaatar Mix",
-     "description": "",
-     "price": 2.5,
+     "description": "1KG",
+     "price": 12,
      "currency": "$",
 
      "discountedPrice": 0,
@@ -53,8 +53,8 @@
   {
      "sku": "G-005",
      "name": "Organic Keshek",
-     "description": "",
-     "price": 2.5,
+     "description": "Cow-1KG",
+     "price": 12,
      "currency": "$",
      "discountedPrice": 0,
      "logo": "OrganicKeshek.png",
