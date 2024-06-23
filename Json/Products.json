@@ -47,7 +47,7 @@
      "discountedPrice": 0,
      "image": "",
      "logo": "OrganicWalnut.png",
-     "active": true,
+     "active": false,
      "new": true
  },
    {
@@ -85,7 +85,7 @@
      "discountedPrice": 0,
      "image": "",
      "logo": "GrapeLeaves.png",
-     "active": true,
+     "active": false,
      "new": true
  }, 
 {
