@@ -6,7 +6,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "PineNuts.png",
+     "image": "",
+     "logo": "PineNuts.png",
      "active": true,
      "new": true
  },
@@ -18,7 +19,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "OrganicSumac.png",
+     "image": "",
+     "logo": "OrganicSumac.png",
      "active": true,
      "new": true
  },
@@ -30,7 +32,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "ZaatarMix.png",
+     "image": "",
+     "logo": "ZaatarMix.png",
      "active": true,
      "new": true
  },
@@ -42,7 +45,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "OrganicWalnut.png",
+     "image": "",
+     "logo": "OrganicWalnut.png",
      "active": true,
      "new": true
  },
@@ -53,7 +57,8 @@
      "price": 2.5,
      "currency": "$",
      "discountedPrice": 0,
-     "image": "OrganicKeshek.png",
+     "image": "",
+     "logo": "OrganicKeshek.png",
      "active": true,
      "new": true
  },
@@ -65,7 +70,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "OrganicHoney.png",
+     "image": "",
+     "logo": "OrganicHoney.png",
      "active": true,
      "new": true
  },
@@ -77,7 +83,8 @@
      "currency": "$",
 
      "discountedPrice": 0,
-     "image": "GrapeLeaves.png",
+     "image": "",
+     "logo": "GrapeLeaves.png",
      "active": true,
      "new": true
  }
