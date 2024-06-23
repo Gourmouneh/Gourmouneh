@@ -137,5 +137,18 @@
      "image": "",
      "active": true,
      "new": true
+ },
+{
+     "sku": "G-011",
+     "name": "Organic Rose Water",
+     "description": "500mL",
+     "price": 7,
+     "currency": "$",
+
+     "discountedPrice": 0,
+     "logo": "OrganicRoseWater.png",
+     "image": "",
+     "active": true,
+     "new": true
  }
 ]
