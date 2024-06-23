@@ -65,7 +65,7 @@
   {
      "sku": "G-006",
      "name": "Organic Honey",
-     "description": "",
+     "description": "Pure sendyen meretben 900g",
      "price": 15,
      "currency": "$",
 
@@ -96,7 +96,7 @@
      "currency": "$",
      "discountedPrice": 0,
      "logo": "OrganicKeshek.png",
-     "image": "OrganicKeshek.png",
+     "image": "OrganicKeshek1.png",
      "active": true,
      "new": true
  },
@@ -121,7 +121,7 @@
 
      "discountedPrice": 0,
      "logo": "OrganicHoney.png",
-     "image": "OrganicHoney.png",
+     "image": "OrganicHoney1.png",
      "active": true,
      "new": true
  },
@@ -138,17 +138,30 @@
      "active": true,
      "new": true
  },
-{
-     "sku": "G-011",
-     "name": "Organic Rose Water",
-     "description": "500mL",
-     "price": 7,
-     "currency": "$",
-
-     "discountedPrice": 0,
-     "logo": "OrganicRoseWater.png",
-     "image": "",
-     "active": true,
-     "new": true
- }
+ {
+      "sku": "G-011",
+      "name": "Organic Rose Water",
+      "description": "500mL",
+      "price": 7,
+      "currency": "$",
+ 
+      "discountedPrice": 0,
+      "logo": "OrganicRoseWater.png",
+      "image": "",
+      "active": true,
+      "new": true
+  },
+  {
+       "sku": "G-011",
+       "name": "Organic Mawared",
+       "description": "500mL",
+       "price": 7,
+       "currency": "$",
+  
+       "discountedPrice": 0,
+       "logo": "OrganicMawared.png",
+       "image": "",
+       "active": true,
+       "new": true
+   }
 ]
