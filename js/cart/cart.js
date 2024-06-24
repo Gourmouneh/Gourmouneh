@@ -37,13 +37,16 @@ function ready() {
           var subtotal = itemData.price * itemData.quantity;
           var currency = itemData.currency;
 
+          var imgUrl = "https://gourmouneh.github.io/Images/"
+                var img = itemData.image == "" ? imgUrl + "ProductsLogo/" + itemData.logo : imgUrl + "Products/" + itemData.image;
+
           var cartRow = document.createElement('tr');
           cartRow.classList.add("cart-row");
           cartRow.id = itemData.sku;
           cartRow.innerHTML = `<td>
          <i class="far fa-times-circle"></i>
         </td>
-        <td><img src="https://gourmouneh.github.io/Images/Products/${itemData.image}" alt="" /></td>
+        <td><img src="${img}" alt="" /></td>
         <td>${itemData.name}</td>
          <td class="cart-price">${itemData.currency} ${itemData.price}</td>
          <td><input type="number" value="${itemData.quantity}" class="cart-quantity-input" min="1" step="1"/></td>
