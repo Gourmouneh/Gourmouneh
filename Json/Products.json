@@ -141,14 +141,14 @@
  },
  {
       "sku": "G-011",
-      "name": "Organic Rose Water",
+      "name": "Organic Mazaher",
       "description": "500mL",
       "price": 10,
       "currency": "$",
  
       "discountedPrice": 0,
       "logo": "OrganicRoseWater.png",
-      "image": "",
+      "image": "OrganicRoseWater.jpeg",
       "active": true,
       "new": true
   },
