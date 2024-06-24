@@ -180,8 +180,8 @@ function updateCartTotal() {
 
 // Purchase clicked - functio
 function purchaseBtnClicked(event) {
-  var customerName=$("#name").val();
-  var phoneNumber=$("#number").val();
+  var customerName = $("#name").val();
+  var phoneNumber = $("#number").val();
   if (localStorage.getItem("cartData") != null) {
 
     if (customerName == "" && phoneNumber == "") {
@@ -219,7 +219,7 @@ function sendEmail() {
   console.log(cartList);
   console.log(customerName);
   console.log(phoneNumber);
-  
+
   var currentDate = new Date().toLocaleDateString();
 
   // Create a div element for customer info
@@ -248,14 +248,14 @@ function sendEmail() {
 
   var headerRow = document.createElement("tr");
 
-  var headers = ["SKU", "Name","Description" , "Quantity", "Price"];
+  var headers = ["SKU", "Name", "Description", "Quantity", "Price"];
 
   headers.forEach(function (headerText) {
-      var headerCell = document.createElement("th");
-      headerCell.style.border = "1px solid black";
-      headerCell.style.padding = "8px";
-      headerCell.textContent = headerText;
-      headerRow.appendChild(headerCell);
+    var headerCell = document.createElement("th");
+    headerCell.style.border = "1px solid black";
+    headerCell.style.padding = "8px";
+    headerCell.textContent = headerText;
+    headerRow.appendChild(headerCell);
   });
 
   table.appendChild(headerRow);
@@ -271,7 +271,7 @@ function sendEmail() {
       cell.style.padding = "8px";
       cell.textContent = headerText === "Price" ? "$ " + product[headerText.toLowerCase()] : product[headerText.toLowerCase()];
       row.appendChild(cell);
-  });
+    });
 
     tbody.appendChild(row);
   });

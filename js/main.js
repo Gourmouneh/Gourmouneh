@@ -125,11 +125,11 @@ function fetchProducts() {
             const productList = $('#product-list');
             activeProducts = products.filter(product => product.active);
             activeProducts.forEach((product, index) => {
-                var imgUrl ="https://gourmouneh.github.io/Images/"
-                var img = product.image == "" ? imgUrl+"ProductsLogo/"+product.logo : imgUrl+"Products/"+product.image ;
+                var imgUrl = "https://gourmouneh.github.io/Images/"
+                var img = product.image == "" ? imgUrl + "ProductsLogo/" + product.logo : imgUrl + "Products/" + product.image;
                 var isLocal = false;
-                if(isLocal){
-                    img= "../imgs/" + product.logo
+                if (isLocal) {
+                    img = "../imgs/" + product.logo
                 }
                 const productItem = $(`
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.${index + 1}s">
@@ -173,7 +173,7 @@ function SetQuantityFlag() {
                 });
             }
         }
-    }else {
+    } else {
         quantity.forEach(element => {
             element.innerText = 0;
         });
@@ -247,11 +247,12 @@ function addToCard(sku) {
                 existingCartData.push(newCartData);
                 break;
             }
-        }} else {
-            newCartData.quantity = 1;
-            existingCartData.push(newCartData);
         }
-        localStorage.setItem('cartData', JSON.stringify(existingCartData));
+    } else {
+        newCartData.quantity = 1;
+        existingCartData.push(newCartData);
+    }
+    localStorage.setItem('cartData', JSON.stringify(existingCartData));
     SetQuantityFlag();
     // if (listCards[key] == null) {
     //     // copy product form list to list card
@@ -265,63 +266,63 @@ function addToCard(sku) {
 }
 function SendContactEmail() {
 
-var name=$("#name").val();
-var email=$("#email").val();
-var message= $("#message").val();
-var phoneNumber= $("#phone").val();
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    var phoneNumber = $("#phone").val();
 
-if (name == "" && phoneNumber == "") {
-    alert("Please Enter Your Name and Number to proceed");
-    return;
-  } else {
-    if (name == "") {
-      alert("Please Enter Your Name to proceed");
-      return;
+    if (name == "" && phoneNumber == "") {
+        alert("Please Enter Your Name and Number to proceed");
+        return;
+    } else {
+        if (name == "") {
+            alert("Please Enter Your Name to proceed");
+            return;
+        }
+        if (phoneNumber == "") {
+            alert("Please Enter Your Number to proceed");
+            return;
+        }
+        if (message == "") {
+            alert("Please Enter Your Message to proceed");
+            return;
+        }
     }
-    if (phoneNumber == "") {
-      alert("Please Enter Your Number to proceed");
-      return;
-    }
-    if (message == "") {
-      alert("Please Enter Your Message to proceed");
-      return;
-    }
-  }
-console.log(message);
+    console.log(message);
 
 
-var currentDate = new Date().toLocaleDateString();
+    var currentDate = new Date().toLocaleDateString();
 
-// Create a div element for customer info
-var customerInfoDiv = document.createElement("div");
-customerInfoDiv.innerHTML =
-  "<p>Customer Name: " +
-  name +
-  "</p>" +
-  "<p>Phone Number: " +
-  phoneNumber +
-  "</p>" +
-  "<p>Email: " +
-  email +
-  "</p>" +
-  "<p>Message: " +
-  message +
-  "</p>" +
-  "<p>Date: " +
-  currentDate +
-  "</p>";
-  var emailContent = customerInfoDiv.outerHTML;
+    // Create a div element for customer info
+    var customerInfoDiv = document.createElement("div");
+    customerInfoDiv.innerHTML =
+        "<p>Customer Name: " +
+        name +
+        "</p>" +
+        "<p>Phone Number: " +
+        phoneNumber +
+        "</p>" +
+        "<p>Email: " +
+        email +
+        "</p>" +
+        "<p>Message: " +
+        message +
+        "</p>" +
+        "<p>Date: " +
+        currentDate +
+        "</p>";
+    var emailContent = customerInfoDiv.outerHTML;
 
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "gourmouneh@gmail.com",
-    Password: "CCA89F3573A9769E58D3261644246999E1B5",
-    To: "gourmouneh@gmail.com",
-    From: "gourmouneh@gmail.com",
-    Subject: "Contact Form - From " + name,
-    Body: emailContent,
-  }).then(function (message) {
-    alert("Form Sent\nWe will contact you shortly.");
-    location.reload();
-  });
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "gourmouneh@gmail.com",
+        Password: "CCA89F3573A9769E58D3261644246999E1B5",
+        To: "gourmouneh@gmail.com",
+        From: "gourmouneh@gmail.com",
+        Subject: "Contact Form - From " + name,
+        Body: emailContent,
+    }).then(function (message) {
+        alert("Form Sent\nWe will contact you shortly.");
+        location.reload();
+    });
 }
