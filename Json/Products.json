@@ -9,7 +9,7 @@
          "image": "PineNuts.jpeg",
          "logo": "PineNuts.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-002",
@@ -22,7 +22,7 @@
          "image": "OrganicSumac.jpeg",
          "logo": "OrganicSumac.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-003",
@@ -35,7 +35,7 @@
          "image": "ZaatarMix.jpeg",
          "logo": "ZaatarMix.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-004",
@@ -48,7 +48,7 @@
          "image": "",
          "logo": "OrganicWalnut.png",
          "active": false,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-005",
@@ -60,7 +60,7 @@
          "logo": "OrganicKeshek.png",
          "image": "OrganicKeshek.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-006",
@@ -73,7 +73,7 @@
          "logo": "OrganicHoney.png",
          "image": "OrganicHoney.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-007",
@@ -86,7 +86,7 @@
          "image": "",
          "logo": "GrapeLeaves.png",
          "active": false,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-008",
@@ -98,7 +98,7 @@
          "logo": "OrganicKeshek.png",
          "image": "OrganicKeshek.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-009",
@@ -110,7 +110,7 @@
          "logo": "OrganicDebesRemen.png",
          "image": "OrganicDebesRemen.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-0010",
@@ -124,7 +124,7 @@
          "logo": "OrganicHoney.png",
          "image": "OrganicHoneyS.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-011",
@@ -137,7 +137,7 @@
          "logo": "OrganicFreekeh.png",
          "image": "OrganicFreekeh.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-012",
@@ -150,7 +150,7 @@
          "logo": "OrganicRoseWater.png",
          "image": "OrganicRoseWater.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-013",
@@ -163,7 +163,7 @@
          "logo": "OrganicMawared.png",
          "image": "OrganicMawared.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-014",
@@ -176,6 +176,6 @@
          "image": "OrganicSumac.jpeg",
          "logo": "OrganicSumac.png",
          "active": true,
-         "new": true
+         "new": false
      }
  ]
