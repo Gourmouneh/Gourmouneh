@@ -138,7 +138,7 @@ function fetchProducts() {
                                 <img class="img-fluid w-100" src="${img}" alt="">
                                 ${product.new ? '<div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>' : ''}
                             </div>
-                            <div class="text-center p-1">
+                            <div class="text-center p-4">
                                 <a class="d-block h6 mb-2">${product.name}</a>
                                 <p class="d-block h6 mb-2 description">${product.description}</p>
                                 ${product.discountedPrice != 0 ? '<span class="text-primary me-1">' + product.currency + product.discountedPrice + '</span><span class="text-body text-decoration-line-through">'
