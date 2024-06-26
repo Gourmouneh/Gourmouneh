@@ -38,7 +38,7 @@ function ready() {
           var currency = itemData.currency;
 
           var imgUrl = "https://gourmouneh.github.io/Images/"
-                var img = itemData.image == "" ? imgUrl + "ProductsLogo/" + itemData.logo : imgUrl + "Products/" + itemData.image;
+          var img = itemData.image == "" ? imgUrl + "ProductsLogo/" + itemData.logo : imgUrl + "Products/" + itemData.image;
 
           var cartRow = document.createElement('tr');
           cartRow.classList.add("cart-row");

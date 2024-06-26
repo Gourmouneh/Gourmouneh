@@ -165,17 +165,17 @@
          "active": true,
          "new": true
      },
-       {
-     "sku": "G-014",
-     "name": "Organic Sumac",
-     "description": "0.5KG",
-     "price": 6,
-     "currency": "$",
+     {
+         "sku": "G-014",
+         "name": "Organic Sumac",
+         "description": "0.5KG",
+         "price": 6,
+         "currency": "$",
 
-     "discountedPrice": 0,
+         "discountedPrice": 0,
          "image": "OrganicSumac.jpeg",
          "logo": "OrganicSumac.png",
-     "active": true,
-     "new": true
- }
+         "active": true,
+         "new": true
+     }
  ]
