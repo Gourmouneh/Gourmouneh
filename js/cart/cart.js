@@ -39,6 +39,7 @@ function ready() {
 
           var imgUrl = "https://gourmouneh.github.io/Images/"
           var img = itemData.image == "" ? imgUrl + "ProductsLogo/" + itemData.logo : imgUrl + "Products/" + itemData.image;
+          var itemDesc = itemData.description == "" ? "" :  " - " + itemData.description;
 
           var cartRow = document.createElement('tr');
           cartRow.classList.add("cart-row");
@@ -47,7 +48,7 @@ function ready() {
          <i class="far fa-times-circle"></i>
         </td>
         <td><img src="${img}" alt="" /></td>
-        <td>${itemData.name}</td>
+        <td>${itemData.name} <span class="description">${itemDesc}</span></td>
          <td class="cart-price">${itemData.currency} ${itemData.price}</td>
          <td><input type="number" value="${itemData.quantity}" class="cart-quantity-input" min="1" step="1"/></td>
         <td class="cart-item-subtotal">${itemData.currency} ${subtotal}</td>`;

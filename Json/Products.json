@@ -53,7 +53,7 @@
      {
          "sku": "G-005",
          "name": "Organic Keshek",
-         "description": "Cow-1KG",
+         "description": "Cow 1KG",
          "price": 12,
          "currency": "$",
          "discountedPrice": 0,
@@ -91,7 +91,7 @@
      {
          "sku": "G-008",
          "name": "Organic Keshek",
-         "description": "Goat-1KG",
+         "description": "Goat 1KG",
          "price": 15,
          "currency": "$",
          "discountedPrice": 0,

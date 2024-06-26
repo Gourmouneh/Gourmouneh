@@ -141,8 +141,8 @@ function fetchProducts() {
                             <div class="text-center p-4">
                                 <a class="d-block h6 mb-2">${product.name}</a>
                                 <p class="d-block h6 mb-2 description">${product.description}</p>
-                                <span class="text-primary me-1">${product.currency}${product.price}</span>
-                                ${product.discountedPrice != 0 ? '<span class="text-body text-decoration-line-through">${product.discountedPrice}</span>' : ''}
+                                ${product.discountedPrice != 0 ? '<span class="text-primary me-1">' + product.currency + product.discountedPrice + '</span><span class="text-body text-decoration-line-through">'
+                        + product.currency + product.price + '</span>' : '<span class="text-primary me-1">' + product.currency + product.price + '</span>'}
                             </div>
                             <div class="d-flex border-top"  onclick="addToCard('${product.sku}')" style="cursor:pointer">
                                 <small class="w-100 text-center py-2">
