@@ -83,9 +83,9 @@
          "currency": "$",
 
          "discountedPrice": 0,
-         "image": "",
+         "image": "GrapeLeaves.jpeg",
          "logo": "GrapeLeaves.png",
-         "active": false,
+         "active": true,
          "new": true
      },
      {
