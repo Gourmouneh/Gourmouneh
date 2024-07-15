@@ -177,5 +177,31 @@
          "logo": "OrganicSumac.png",
          "active": true,
          "new": true
+     },
+     {
+         "sku": "G-015",
+         "name": "Rose Syrup",
+         "description": "500mL",
+         "price": 9,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "RoseSyrup.jpeg",
+         "logo": "RoseSyrup.png",
+         "active": false,
+         "new": true
+     },{
+         "sku": "G-016",
+         "name": "Blackberry Syrup",
+         "description": "500mL",
+         "price": 9,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "BlackberrySyrup.jpeg",
+         "logo": "BlackberrySyrup.png",
+         "active": false,
+         "new": true
      }
+     
  ]
