@@ -186,9 +186,9 @@
          "currency": "$",
 
          "discountedPrice": 0,
-         "image": "RoseSyrup.jpeg",
+         "image": "RoseSyrup.jpg",
          "logo": "RoseSyrup.png",
-         "active": false,
+         "active": true,
          "new": true
      },{
          "sku": "G-016",
@@ -198,9 +198,9 @@
          "currency": "$",
 
          "discountedPrice": 0,
-         "image": "BlackberrySyrup.jpeg",
+         "image": "BlackberrySyrup.jpg",
          "logo": "BlackberrySyrup.png",
-         "active": false,
+         "active": true,
          "new": true
      }
      
