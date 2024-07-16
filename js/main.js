@@ -7,6 +7,7 @@ let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelectorAll('.quantity');
+let popupTimeout;
 let listCards = [];
 var activeProducts = [];
 
@@ -238,22 +239,41 @@ function addToCard(sku) {
     var existingCartData = JSON.parse(localStorage.getItem('cartData'));
 
     if (existingCartData.length > 0) {
+        var found = false;
         for (var i = 0; i < existingCartData.length; i++) {
             if (sku == existingCartData[i].sku) {
                 existingCartData[i].quantity = existingCartData[i].quantity + 1;
-                break;
-            } else {
-                newCartData.quantity = 1;
-                existingCartData.push(newCartData);
+                found = true;
                 break;
             }
+        }
+        if (!found) {
+            newCartData.quantity = 1;
+            existingCartData.push(newCartData);
         }
     } else {
         newCartData.quantity = 1;
         existingCartData.push(newCartData);
     }
+
     localStorage.setItem('cartData', JSON.stringify(existingCartData));
+
     SetQuantityFlag();
+
+     // Show the popup
+     var popup = document.getElementById('cartPopup');
+     popup.classList.add('show');
+ 
+   // Clear previous timeout if it exists
+    if (popupTimeout) {
+        clearTimeout(popupTimeout);
+    }
+
+    // Hide the popup after 2 seconds
+    popupTimeout = setTimeout(() => {
+        popup.classList.remove('show');
+    }, 500);
+
     // if (listCards[key] == null) {
     //     // copy product form list to list card
     //     console.log(activeProducts);
