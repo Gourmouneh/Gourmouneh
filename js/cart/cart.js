@@ -39,7 +39,7 @@ function ready() {
 
           var imgUrl = "https://gourmouneh.github.io/Images/"
           var img = itemData.image == "" ? imgUrl + "ProductsLogo/" + itemData.logo : imgUrl + "Products/" + itemData.image;
-          var itemDesc = itemData.description == "" ? "" :  " - " + itemData.description;
+          var itemDesc = itemData.description == "" ? "" : " - " + itemData.description;
 
           var cartRow = document.createElement('tr');
           cartRow.classList.add("cart-row");
@@ -106,7 +106,7 @@ function updateSubtotal(event) {
   var curPrice = parseFloat(curPriceElement.innerText.replace("$", "").trim());
   var curSku = curCartRow.id;
 
-  var curQuantity = (input.value  == null || input.value  == '' || input.value <= "0") ? "1" :  input.value;
+  var curQuantity = (input.value == null || input.value == '' || input.value <= "0") ? "1" : input.value;
 
   var subtotal = curQuantity * curPrice;
 
@@ -217,7 +217,8 @@ function sendEmail() {
   var cartList = JSON.parse(localStorage.getItem("cartData")) || [];
   var customerName = $("#name").val();
   var phoneNumber = $("#number").val();
-  var quantity = 3;
+  var quantity = document.getElementsByClassName('quantity')[0].innerText;
+
   var cartTotal = $(".cart-total").text();
 
   console.log(cartList);
@@ -252,7 +253,7 @@ function sendEmail() {
 
   var headerRow = document.createElement("tr");
 
-  var headers = ["SKU", "Name", "Description", "Quantity", "Price"];
+  var headers = ["SKU", "Name", "Description", "Quantity", "Price", "SubTotal"];
 
   headers.forEach(function (headerText) {
     var headerCell = document.createElement("th");
@@ -273,7 +274,7 @@ function sendEmail() {
       var cell = document.createElement("td");
       cell.style.border = "1px solid black";
       cell.style.padding = "8px";
-      cell.textContent = headerText === "Price" ? "$ " + product[headerText.toLowerCase()] : product[headerText.toLowerCase()];
+      cell.textContent = headerText === "Price" ? "$ " + product[headerText.toLowerCase()] : headerText === "SubTotal" ? "$ " + product["quantity"] * product["price"] : product[headerText.toLowerCase()];
       row.appendChild(cell);
     });
 

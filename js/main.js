@@ -160,7 +160,7 @@ function fetchProducts() {
 }
 
 function SetQuantityFlag() {
-    if (localStorage.getItem('cartData') != null) {
+    if (localStorage.getItem('cartData') != null && localStorage.getItem('cartData') != "[]" ) {
         var myCartData = JSON.parse(localStorage.getItem('cartData'));
         var quantityFlag = 0;
 
@@ -284,6 +284,7 @@ function addToCard(sku) {
     // }
     // reloadCard();
 }
+
 function SendContactEmail() {
 
     var name = $("#name").val();
