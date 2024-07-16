@@ -106,7 +106,7 @@ function updateSubtotal(event) {
   var curPrice = parseFloat(curPriceElement.innerText.replace("$", "").trim());
   var curSku = curCartRow.id;
 
-  var curQuantity = input.value;
+  var curQuantity = (input.value  == null || input.value  == '' || input.value <= "0") ? "1" :  input.value;
 
   var subtotal = curQuantity * curPrice;
 
