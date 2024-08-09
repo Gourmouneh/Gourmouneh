@@ -317,58 +317,6 @@ body {
     color: var(--primary) !important;
 }
 
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item img {
-    width: 60px;
-    height: 60px;
-}
-
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item .testimonial-item * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #FFFFFF !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item i {
-    color: var(--secondary) !important;
-}
-
-.testimonial-carousel .owl-nav {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    margin: 0 12px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    border: 2px solid var(--primary);
-    border-radius: 50px;
-    font-size: 18px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-}
-
-
 /*** Footer ***/
 .footer {
     color: #999999;
