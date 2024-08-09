@@ -190,7 +190,8 @@
          "logo": "RoseSyrup.png",
          "active": true,
          "new": true
-     },{
+     },
+     {
          "sku": "G-016",
          "name": "Blackberry Syrup",
          "description": "500mL",
@@ -202,6 +203,71 @@
          "logo": "BlackberrySyrup.png",
          "active": true,
          "new": true
+     },
+     {
+         "sku": "G-017",
+         "name": "Goat Labneh Balls - Plain",
+         "description": "Jar",
+         "price": 9,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "Goat Labneh Balls - Plain.jpeg",
+         "logo": "Goat Labneh Balls - Plain.png",
+         "active": true,
+         "new": true
      }
-     
+     ,
+     {
+         "sku": "G-018",
+         "name": "Cow Labneh Balls - Black Seeds",
+         "description": "Jar",
+         "price": 8,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "Cow Labneh Balls - Black Seeds.jpeg",
+         "logo": "Cow Labneh Balls - Black Seeds.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-019",
+         "name": "Cow Labneh Balls -Za’atar",
+         "description": "Jar",
+         "price": 8,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "Cow Labneh Balls -Za’atar.jpeg",
+         "logo": "Cow Labneh Balls -Za’atar.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-020",
+         "name": "Cow Labneh Balls -Za’atar",
+         "description": "Jar",
+         "price": 8,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "Cow Labneh Balls -Za’atar.jpeg",
+         "logo": "Cow Labneh Balls -Za’atar.png",
+         "active": false,
+         "new": true
+     },
+     {
+         "sku": "G-021",
+         "name": "Cow Labneh Balls -Za’atar",
+         "description": "Jar",
+         "price": 8,
+         "currency": "$",
+
+         "discountedPrice": 0,
+         "image": "Cow Labneh Balls -Za’atar.jpeg",
+         "logo": "Cow Labneh Balls -Za’atar.png",
+         "active": false,
+         "new": true
+     }
  ]
