@@ -246,14 +246,14 @@
      },
      {
          "sku": "G-020",
-         "name": "Cow Labneh Balls",
-         "description": "Za’atar Jar",
+         "name": "Fig Jam",
+         "description": "Jar",
          "price": 8,
          "currency": "$",
 
          "discountedPrice": 0,
-         "image": "Cow Labneh Balls -Za’atar.jpeg",
-         "logo": "Cow Labneh Balls -Za’atar.png",
+         "image": "FigJam.jpeg",
+         "logo": "FigJam.png",
          "active": false,
          "new": true
      },
