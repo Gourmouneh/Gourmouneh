@@ -216,8 +216,7 @@
          "logo": "Goat Labneh Balls - Plain.png",
          "active": true,
          "new": true
-     }
-     ,
+     },
      {
          "sku": "G-018",
          "name": "Cow Labneh Balls",
@@ -244,30 +243,65 @@
          "active": true,
          "new": true
      },
+
      {
          "sku": "G-020",
-         "name": "Fig Jam",
+         "name": "Quince Jam (مربى السفرجل)",
          "description": "Jar",
          "price": 8,
          "currency": "$",
-
          "discountedPrice": 0,
-         "image": "FigJam.jpeg",
-         "logo": "FigJam.png",
-         "active": false,
+         "image": "Apricot Jam.jpeg",
+         "logo": "Apricot Jam.png",
+         "active": true,
          "new": true
      },
      {
          "sku": "G-021",
-         "name": "Cow Labneh Balls",
-         "description": "Za’atar Jar",
+         "name": "Fig Jam",
+         "description": "Jar",
+         "price": 9,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "Fig Jam.jpeg",
+         "logo": "Fig Jam.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-022",
+         "name": "Fig Jam",
+         "description": "Jar",
+         "price": 7,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "Fig Jam1.jpeg",
+         "logo": "Fig Jam1.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-023",
+         "name": "Apricot Compote",
+         "description": "Jar",
          "price": 8,
          "currency": "$",
-
          "discountedPrice": 0,
-         "image": "Cow Labneh Balls -Za’atar.jpeg",
-         "logo": "Cow Labneh Balls -Za’atar.png",
-         "active": false,
+         "image": "Apricot Compote.jpeg",
+         "logo": "Apricot Compote.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-024",
+         "name": "Apricot Jam",
+         "description": "Jar",
+         "price": 8,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "Apricot Jam.jpeg",
+         "logo": "Apricot Jam.png",
+         "active": true,
          "new": true
      }
  ]
