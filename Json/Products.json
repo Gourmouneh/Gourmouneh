@@ -315,5 +315,41 @@
          "logo": "Makdous.png",
          "active": true,
          "new": true
+     },
+     {
+         "sku": "G-026",
+         "name": "Cow Labneh Balls",
+         "description": "Spicy Jar",
+         "price": 8,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "Spicy labneh.jpeg",
+         "logo": "Spicy labneh.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-027",
+         "name": "Strawberry Jam",
+         "description": "Jar",
+         "price": 6,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "StrawberryJam.jpeg",
+         "logo": "StrawberryJam.png",
+         "active": true,
+         "new": true
+     },
+     {
+         "sku": "G-028",
+         "name": "Cow Labneh Balls",
+         "description": "Stuffed with Olives Jar",
+         "price": 9,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "LabnehOlives.jpeg",
+         "logo": "LabnehOlives.png",
+         "active": true,
+         "new": true
      }
  ]
