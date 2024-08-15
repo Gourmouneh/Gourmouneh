@@ -303,5 +303,17 @@
          "logo": "Apricot Jam.png",
          "active": true,
          "new": true
+     },
+     {
+         "sku": "G-025",
+         "name": "Makdous",
+         "description": "Jar",
+         "price": 8,
+         "currency": "$",
+         "discountedPrice": 0,
+         "image": "Makdous.jpeg",
+         "logo": "Makdous.png",
+         "active": true,
+         "new": true
      }
  ]
