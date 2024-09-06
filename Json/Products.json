@@ -66,7 +66,7 @@
          "sku": "G-006",
          "name": "Organic Honey",
          "description": "Pure Sendyen 900g",
-         "price": 20,
+         "price": 25,
          "currency": "$",
 
          "discountedPrice": 0,
@@ -117,7 +117,7 @@
          "name": "Organic Honey",
 
          "description": "Sendyen 900g",
-         "price": 15,
+         "price": 20,
          "currency": "$",
 
          "discountedPrice": 0,
