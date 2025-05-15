@@ -344,7 +344,7 @@ function sendEmail() {
       sessionStorage.clear();
       localStorage.removeItem('cartData');
 
-      window.location.href = window.location.origin + "/Gourmouneh/";
+      window.location.href = "/Gourmouneh/";
 
     })
     .catch(error => {
