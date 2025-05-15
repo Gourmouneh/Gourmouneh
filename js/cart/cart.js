@@ -1,3 +1,5 @@
+var purchaseBtn;
+
 if (document.readyState == 'loading') {
   document.addEventListener("DOMContentLoaded", ready)
 } else {
@@ -74,7 +76,7 @@ function ready() {
     updateCartTotal();
 
     // purchase btn
-    var purchaseBtn = document.getElementById("btn-purchase");
+    purchaseBtn = document.getElementById("btn-purchase");
     purchaseBtn.addEventListener('click', purchaseBtnClicked);
 
 
@@ -186,7 +188,8 @@ function updateCartTotal() {
 function purchaseBtnClicked(event) {
   var customerName = $("#name").val();
   var phoneNumber = $("#number").val();
-  if (localStorage.getItem("cartData") != null) {
+  var cartData = localStorage.getItem("cartData");
+  if (cartData && JSON.parse(cartData).length > 0) {
 
     if (customerName == "" && phoneNumber == "") {
       alert("Please Enter Your Name and Number to proceed");
@@ -213,6 +216,9 @@ function purchaseBtnClicked(event) {
 
 
 function sendEmail() {
+
+  purchaseBtn.disabled = true;
+  purchaseBtn.textContent = "Processing...";
 
   var cartList = JSON.parse(localStorage.getItem("cartData")) || [];
   var customerName = $("#name").val();
@@ -287,19 +293,65 @@ function sendEmail() {
   var emailContent = customerInfoDiv.outerHTML + table.outerHTML;
 
 
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "gourmouneh@gmail.com",
-    Password: "CCA89F3573A9769E58D3261644246999E1B5",
-    To: "gourmouneh@gmail.com",
-    From: "gourmouneh@gmail.com",
-    Subject: "Order Details from " + customerName,
-    Body: emailContent,
-  }).then(function (message) {
-    alert("Order Sent\nWe will contact you shortly to confirm the details.");
-    sessionStorage.clear();
-    localStorage.removeItem('cartData');
+  // Email.send({
+  //   Host: "smtp.elasticemail.com",
+  //   Username: "gourmouneh@gmail.com",
+  //   Password: "CCA89F3573A9769E58D3261644246999E1B5",
+  //   To: "gourmouneh@gmail.com",
+  //   From: "gourmouneh@gmail.com",
+  //   Subject: "Order Details from " + customerName,
+  //   Body: emailContent,
+  // }).then(function (message) {
+  //   alert("Order Sent\nWe will contact you shortly to confirm the details.");
+  //   sessionStorage.clear();
+  //   localStorage.removeItem('cartData');
 
-    location.reload();
-  });
+  //   location.reload();
+  // });
+
+
+  console.log(cartList);
+
+  var orderItems = cartList.map(product => ({
+    sku: product.sku,
+    item_name: product.name,
+    qty: product.quantity,
+    item_price: product.price,
+    price: (product.price * product.quantity),
+    item_description: product.description ? " - " + product.description : ""
+  }));
+
+  // Calculate the total cost
+  var totalCost = orderItems.reduce((sum, item) => sum + item.price, 0);
+
+  var templateParams = {
+    name: customerName,
+    phone: phoneNumber,
+    orders: orderItems,
+    quantity: quantity,
+    cost: {
+      total: totalCost
+    }
+  };
+
+  console.log(templateParams);
+
+  // Send the email
+  emailjs.send('service_eaoo0k7', 'template_order', templateParams, 'VdUR0V6FGw8c3sn7t')
+    .then(response => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert("Order Sent\nWe will contact you shortly to confirm the details.");
+      sessionStorage.clear();
+      localStorage.removeItem('cartData');
+
+      window.location.href = "/";
+    })
+    .catch(error => {
+      console.error('FAILED...', error);
+
+      purchaseBtn.disabled = false;
+      purchaseBtn.textContent = "Proceed to Checkout";
+
+      alert("Failed to send order confirmation.");
+    });
 }

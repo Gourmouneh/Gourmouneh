@@ -90,7 +90,7 @@ var activeProducts = [];
 
     //Get Products List
     fetchProducts();
-    emailjs.init("service_eaoo0k7");
+    // emailjs.init("service_eaoo0k7");
 })(jQuery);
 
 function fetchProducts() {
@@ -260,6 +260,10 @@ function addToCard(sku) {
 }
 
 function SendContactEmail() {
+    var sendMessageBtn = document.getElementById("sendMessageBtn");
+    // Disable the button and change text
+    sendMessageBtn.disabled = true;
+    sendMessageBtn.textContent = "Sending...";
 
     var name = $("#name").val();
     var email = $("#email").val();
@@ -337,10 +341,14 @@ function SendContactEmail() {
     emailjs.send('service_eaoo0k7', 'template_contactUs', templateParams, 'VdUR0V6FGw8c3sn7t')
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            
+
             alert("Form Sent\nWe will contact you shortly.");
             location.reload();
         }, function (error) {
             console.log('FAILED...', error);
+            
+            // Re-enable the button
+            sendMessageBtn.disabled = false;
+            sendMessageBtn.textContent = "Send Message";
         });
 }
