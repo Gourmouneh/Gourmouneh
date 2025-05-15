@@ -9,7 +9,7 @@
          "image": "PineNuts.jpeg",
          "logo": "PineNuts.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-002",
@@ -22,7 +22,7 @@
          "image": "OrganicSumac.jpeg",
          "logo": "OrganicSumac.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-003",
@@ -35,7 +35,7 @@
          "image": "ZaatarMix.jpeg",
          "logo": "ZaatarMix.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-004",
@@ -48,7 +48,7 @@
          "image": "",
          "logo": "OrganicWalnut.png",
          "active": false,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-005",
@@ -60,7 +60,7 @@
          "logo": "OrganicKeshek.png",
          "image": "OrganicKeshek.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-006",
@@ -73,7 +73,7 @@
          "logo": "OrganicHoney.png",
          "image": "OrganicHoney.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-007",
@@ -86,7 +86,7 @@
          "image": "GrapeLeaves.jpeg",
          "logo": "GrapeLeaves.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-008",
@@ -98,7 +98,7 @@
          "logo": "OrganicKeshek.png",
          "image": "OrganicKeshek.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-009",
@@ -110,7 +110,7 @@
          "logo": "OrganicDebesRemen.png",
          "image": "OrganicDebesRemen.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-0010",
@@ -124,7 +124,7 @@
          "logo": "OrganicHoney.png",
          "image": "OrganicHoneyS.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-011",
@@ -137,7 +137,7 @@
          "logo": "OrganicFreekeh.png",
          "image": "OrganicFreekeh.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-012",
@@ -150,7 +150,7 @@
          "logo": "OrganicRoseWater.png",
          "image": "OrganicRoseWater.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-013",
@@ -163,7 +163,7 @@
          "logo": "OrganicMawared.png",
          "image": "OrganicMawared.jpeg",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-014",
@@ -176,7 +176,7 @@
          "image": "OrganicSumac.jpeg",
          "logo": "OrganicSumac.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-015",
@@ -189,7 +189,7 @@
          "image": "RoseSyrup.jpg",
          "logo": "RoseSyrup.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-016",
@@ -202,7 +202,7 @@
          "image": "BlackberrySyrup.jpg",
          "logo": "BlackberrySyrup.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-017",
@@ -215,7 +215,7 @@
          "image": "Goat Labneh Balls - Plain.jpeg",
          "logo": "Goat Labneh Balls - Plain.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-018",
@@ -228,7 +228,7 @@
          "image": "Cow Labneh Balls - Black Seeds.jpeg",
          "logo": "Cow Labneh Balls - Black Seeds.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-019",
@@ -241,7 +241,7 @@
          "image": "Cow Labneh Balls -Za’atar.jpeg",
          "logo": "Cow Labneh Balls -Za’atar.png",
          "active": true,
-         "new": true
+         "new": false
      },
 
      {
@@ -254,7 +254,7 @@
          "image": "Apricot Jam.jpeg",
          "logo": "Apricot Jam.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-021",
@@ -266,7 +266,7 @@
          "image": "Fig Jam.jpeg",
          "logo": "Fig Jam.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-022",
@@ -278,7 +278,7 @@
          "image": "Fig Jam1.jpeg",
          "logo": "Fig Jam1.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-023",
@@ -290,7 +290,7 @@
          "image": "Apricot Compote.jpeg",
          "logo": "Apricot Compote.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-024",
@@ -302,7 +302,7 @@
          "image": "Apricot Jam.jpeg",
          "logo": "Apricot Jam.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-025",
@@ -314,7 +314,7 @@
          "image": "Makdous.jpeg",
          "logo": "Makdous.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-026",
@@ -326,7 +326,7 @@
          "image": "Spicy labneh.jpeg",
          "logo": "Spicy labneh.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-027",
@@ -338,7 +338,7 @@
          "image": "StrawberryJam.jpeg",
          "logo": "StrawberryJam.png",
          "active": true,
-         "new": true
+         "new": false
      },
      {
          "sku": "G-028",
@@ -350,6 +350,6 @@
          "image": "LabnehOlives.jpeg",
          "logo": "LabnehOlives.png",
          "active": true,
-         "new": true
+         "new": false
      }
  ]
