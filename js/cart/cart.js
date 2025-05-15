@@ -310,7 +310,7 @@ function sendEmail() {
   // });
 
 
-  console.log(cartList);
+  // console.log(cartList);
 
   var orderItems = cartList.map(product => ({
     sku: product.sku,
@@ -344,7 +344,8 @@ function sendEmail() {
       sessionStorage.clear();
       localStorage.removeItem('cartData');
 
-      window.location.href = "/";
+      window.location.href = window.location.origin + "/Gourmouneh/";
+
     })
     .catch(error => {
       console.error('FAILED...', error);
