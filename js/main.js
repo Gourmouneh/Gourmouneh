@@ -330,13 +330,16 @@ function SendContactEmail() {
             // "Customer Name: " + name + "\n" +
             "Phone Number: " + phoneNumber + "\n" +
             "Email: " + email + "\n" +
-            "Message: " + message + "\n" 
-            //+ "Date: " + currentDate
+            "Message: " + message + "\n"
+        //+ "Date: " + currentDate
     };
 
     emailjs.send('service_eaoo0k7', 'template_contactUs', templateParams, 'VdUR0V6FGw8c3sn7t')
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
+            
+            alert("Form Sent\nWe will contact you shortly.");
+            location.reload();
         }, function (error) {
             console.log('FAILED...', error);
         });
