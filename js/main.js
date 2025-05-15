@@ -90,7 +90,7 @@ var activeProducts = [];
 
     //Get Products List
     fetchProducts();
-
+    emailjs.init("service_eaoo0k7");
 })(jQuery);
 
 function fetchProducts() {
@@ -134,7 +134,7 @@ function fetchProducts() {
 }
 
 function SetQuantityFlag() {
-    if (localStorage.getItem('cartData') != null && localStorage.getItem('cartData') != "[]" ) {
+    if (localStorage.getItem('cartData') != null && localStorage.getItem('cartData') != "[]") {
         var myCartData = JSON.parse(localStorage.getItem('cartData'));
         var quantityFlag = 0;
 
@@ -234,11 +234,11 @@ function addToCard(sku) {
 
     SetQuantityFlag();
 
-     // Show the popup
-     var popup = document.getElementById('cartPopup');
-     popup.classList.add('show');
- 
-   // Clear previous timeout if it exists
+    // Show the popup
+    var popup = document.getElementById('cartPopup');
+    popup.classList.add('show');
+
+    // Clear previous timeout if it exists
     if (popupTimeout) {
         clearTimeout(popupTimeout);
     }
@@ -308,16 +308,36 @@ function SendContactEmail() {
         "</p>";
     var emailContent = customerInfoDiv.outerHTML;
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "gourmouneh@gmail.com",
-        Password: "CCA89F3573A9769E58D3261644246999E1B5",
-        To: "gourmouneh@gmail.com",
-        From: "gourmouneh@gmail.com",
-        Subject: "Contact Form - From " + name,
-        Body: emailContent,
-    }).then(function (message) {
-        alert("Form Sent\nWe will contact you shortly.");
-        location.reload();
-    });
+    // Email.send({
+    //     Host: "smtp.elasticemail.com",
+    //     Username: "gourmouneh@gmail.com",
+    //     Password: "CCA89F3573A9769E58D3261644246999E1B5",
+    //     To: "gourmouneh@gmail.com",
+    //     From: "gourmouneh@gmail.com",
+    //     Subject: "Contact Form - From " + name,
+    //     Body: emailContent,
+    // }).then(function (message) {
+    //     alert("Form Sent\nWe will contact you shortly.");
+    //     location.reload();
+    // });
+
+    var templateParams = {
+        title: 'From ' + name,
+        time: currentDate,
+        name: name,
+        email: email,
+        message:
+            // "Customer Name: " + name + "\n" +
+            "Phone Number: " + phoneNumber + "\n" +
+            "Email: " + email + "\n" +
+            "Message: " + message + "\n" 
+            //+ "Date: " + currentDate
+    };
+
+    emailjs.send('service_eaoo0k7', 'template_contactUs', templateParams, 'VdUR0V6FGw8c3sn7t')
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+            console.log('FAILED...', error);
+        });
 }
